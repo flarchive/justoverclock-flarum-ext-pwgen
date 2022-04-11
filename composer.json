@@ -1,0 +1,41 @@
+{
+  "name": "justoverclock/flarum-ext-pwgen",
+  "description": "Add a secure password generator to Signup Modal",
+  "keywords": [
+    "flarum",
+      "password generator",
+      "secure password"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^1.2.0"
+  },
+  "authors": [
+    {
+      "name": "Marco Colia",
+      "email": "info@flarum.it",
+      "role": "Developer",
+      "homepage": "https://flarum.it"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Justoverclock\\Pwgen\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Pwgen",
+      "category": "features",
+      "icon": {
+        "name": "fas fa-shield-alt",
+        "backgroundColor": "red",
+        "color": "white"
+      }
+    },
+    "flagrow": {
+      "discuss": "https://discuss.flarum.org/d/27066-password-generator/"
+    }
+  }
+}
